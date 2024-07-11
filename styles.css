@@ -6,12 +6,20 @@
     font-family: 'Super Mario 256';
     src: url('fonts/SuperMario256.ttf') format('truetype');
 }
-  
+  body,html{
+    height: 100vh;
+  }  
+
   body {
     font-family: 'Super Mario 256', sans-serif; /* Use Super Mario 256 como fonte padrão */
     padding-right: 20px;
     padding-left: 20px;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; 
+  }
+
+  .main{
+    width:550px;
+    margin: auto;
   }
   .super-mario-text {
     font-family: 'Super Mario 256', sans-serif;
@@ -39,7 +47,7 @@
     text-align: center;
 }
 
-/* Cores viadas */
+/* Cores  */
 .blue{
 color: #009CDA;
 }
@@ -52,12 +60,23 @@ color: #009CDA;
 .yellow{
     color: #FCD000;
 }
-/* Fim da cores viadas */
+.grey1{
+  background-color:#aaa;
+}
+.grey2{
+  background-color:#bbb;
+}
+.grey3{
+  background-color:#ccc;
+}
+.grey4{
+  background-color:#DDD
+}
+/* Fim da cores */
 
 
   /* Style the header */
   .header {
-    
     padding: 30px;
     text-align: center;
     font-size: 35px;
@@ -66,25 +85,38 @@ color: #009CDA;
   /* Create three unequal columns that floats next to each other */
   .column {
     float: left;
-    
-    height: 360px; /* Should be removed. Only for demonstration */
+    width: 300px;
   }
   
   /* Left and right column */
-  .column.side {
-    width: 25%;
-  }
-  .column.side2 {
+  .column40 {
     width: 40%;
   }
-  
-  /* Middle column */
-  .column.middle {
-    width: 50%;
-  }
-  .column.middle2 {
+  .column60 {
     width: 60%;
   }
+  .column100{
+    width: 100%;
+  }
+  .h20{
+    height:20%;
+  }
+
+  .h45{
+    height:45%;
+  }
+  .hl{
+    height: 200px;
+  }
+  .hm{
+    height: 310px;
+  }
+  .hg{
+    height: 360px;
+  }
+
+  
+  
   
   /* Clear floats after the columns */
   .row:after {
@@ -100,12 +132,7 @@ color: #009CDA;
     text-align: center;
   }
   
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    .column.side, .column.middle {
-      width: 100%;
-    }
-  }
+ 
 
 
   button{
