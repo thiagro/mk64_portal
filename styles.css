@@ -7,7 +7,7 @@
     src: url('fonts/SuperMario256.ttf') format('truetype');
 }
   body,html{
-    height: 100vh;
+    height: -webkit-fill-available;
   }  
 
   body {
@@ -20,6 +20,10 @@
   .main{
     width:550px;
     margin: auto;
+  }
+  .b{
+    border-style: groove;  
+    border-radius: 10px;
   }
   .super-mario-text {
     font-family: 'Super Mario 256', sans-serif;
